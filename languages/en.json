@@ -1,0 +1,41 @@
+{
+    "welcome_message": "Welcome to",
+    "corner": "herbus's corner",
+    "select_category": "Select category",
+    "pages": [
+        {
+            "id": "home-page",
+            "name": "Home",
+            "icon": "fa-house"
+        },
+        {
+            "id": "projects-page",
+            "name": "Projects",
+            "icon": "fa-wallet"
+        },
+        {
+            "id": "blog-page",
+            "name": "Blog",
+            "icon": "fa-message"
+        },
+        {
+            "id": "contact-page",
+            "name": "Contact",
+            "icon": "fa-envelope"
+        }
+    ],
+    "settings": "Settings",
+    "settings_options": [
+        {
+            "id": "themes-settings",
+            "name": "Themes",
+            "icon": "fa-brush"
+        },
+        {
+            "id": "accessibility-settings",
+            "name": "Accessibility",
+            "icon": "fa-eye"
+        }
+    ],
+    "search_bar": "Search..."
+}

@@ -1,0 +1,41 @@
+{
+    "welcome_message": "Witaj w",
+    "corner": "kąciku herbusia",
+    "select_category": "Wybierz kategorię",
+    "pages": [
+        {
+            "id": "home-page",
+            "name": "Strona Główna",
+            "icon": "fa-house"
+        },
+        {
+            "id": "projects-page",
+            "name": "Projekty",
+            "icon": "fa-wallet"
+        },
+        {
+            "id": "blog-page",
+            "name": "Blog",
+            "icon": "fa-message"
+        },
+        {
+            "id": "contact-page",
+            "name": "Kontakt",
+            "icon": "fa-envelope"
+        }
+    ],
+    "settings": "Ustawienia",
+    "settings_options": [
+        {
+            "id": "themes-settings",
+            "name": "Motywy",
+            "icon": "fa-brush"
+        },
+        {
+            "id": "accessibility-settings",
+            "name": "Dostępność",
+            "icon": "fa-eye"
+        }
+    ],
+    "search_bar": "Szukaj..."
+}

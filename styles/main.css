@@ -1,0 +1,340 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --primary: #2d3250;
+    --secondary: #424769;
+    --teritary: #676f9d;
+    --accent: #f9b17a;
+    --text: #ffffff;
+}
+
+::placeholder {
+    color: var(--teritary);
+}
+::-ms-input-placeholder {
+    color: var(--teritary);
+}
+
+::selection {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+}
+
+/* navigation bar styles */
+.side-nav-bar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: var(--primary);
+    height: max-content;
+    width: 300px;
+    height: 100vh;
+    border-color: var(--teritary);
+    border-style: solid;
+    border-width: 2px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.welcome-sign {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.5s;
+    text-align: left;
+    background-color: var(--secondary);
+    font-size: 20px;
+    transition: 0.5s;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.welcome-sign img {
+    height: 64px;
+    border-radius: 16px;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-sign p {
+    font-size: 20px;
+    color: var(--text);
+}
+
+.welcome-sign span {
+    font-size: 16px;
+    color: var(--teritary);
+}
+
+#nav-page-selector {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+    border-color: var(--teritary);
+    border-style: solid;
+    border-width: 2px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin-inline: 40px;
+}
+
+#nav-page-selector a {
+    text-decoration: none;
+}
+
+#page-selector-text {
+    font-size: 16px;
+    align-self: flex-start;
+    margin-left: 35px;
+    color: var(--teritary);
+    margin-top: 50px;
+}
+
+.nav-select {
+    height: 24px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.5s;
+    text-align: left;
+    color: var(--teritary);
+    font-size: 20px;
+    transition: 0.25s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.nav-select:active {
+    transform: translateX(10px);
+}
+
+.nav-select i {
+    margin-right: 20px;
+}
+
+#home-page {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+#home-page:hover {
+    background-color: var(--secondary);
+}
+
+#projects-page {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    background-color: var(--primary);
+}
+
+#projects-page:hover {
+    background-color: var(--secondary);
+}
+
+#blog-page {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    background-color: var(--primary);
+}
+
+#blog-page:hover {
+    background-color: var(--secondary);
+}
+
+#contact-page {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    background-color: var(--primary);
+}
+
+#contact-page:hover {
+    background-color: var(--secondary);
+}
+
+#settings-selector {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#settings-selector a {
+    text-decoration: none;
+}
+
+#settings-selector-text {
+    font-size: 16px;
+    margin-top: 20px;
+    align-self: flex-start;
+    margin-left: 35px;
+    color: var(--teritary);
+    margin-top: 50px;
+}
+
+.settings-select {
+    height: 24px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.5s;
+    text-align: left;
+    color: var(--teritary);
+    font-size: 20px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.settings-select:active {
+    transform: scale(0.9);
+}
+
+.settings-select i {
+    margin-right: 20px;
+}
+
+#themes-settings {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    background-color: var(--primary);
+}
+
+#themes-settings:hover {
+    background-color: var(--secondary);
+}
+
+#accessibility-settings {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    background-color: var(--primary);
+}
+
+#accessibility-settings:hover {
+    background-color: var(--secondary);
+}
+
+.nav-bar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: var(--primary);
+    height: 169px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#language-dropdown-button {
+    height: 24px;
+    width: 120px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.5s;
+    text-align: left;
+    color: var(--teritary);
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-inline: 30px;
+}
+
+#language-dropdown-button:hover {
+    background-color: var(--secondary) !important;
+}
+
+#language-dropdown-button:active {
+    transform: scale(0.9);
+}
+
+#language-dropdown-button i {
+    margin-right: 20px;
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.language-dropdown-content {
+    display: none;
+    position: absolute;
+    width: 156px;
+    z-index: 1;
+    border-radius: 0px 0px 16px 16px;
+    border-color: var(--secondary);
+    border-style: solid;
+    border-width: 2px;
+    border-top: none;
+    margin-inline: 30px;
+}
+  
+.language-dropdown-content div {
+    color: var(--teritary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+  
+.language-dropdown-content div:hover {
+    color: var(--text);
+}
+  
+.language-dropdown-content div:hover {
+    background-color: var(--secondary);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.language-dropdown-content #first-language-switch:hover {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+    height: fit-content;
+    border-radius: 16px;
+    transition: 0.5s;
+    margin-inline: 30px;
+}
+
+.search-bar-container:active {
+    transform: scale(0.9);
+}
+
+#search-bar-icon {
+    text-align: center;
+    padding: 20px;  
+    height: 24px;
+    color: var(--teritary);
+}
+
+#search-bar {
+    border-radius: 0px 16px 16px 0px;
+    background-color: var(--secondary);
+    color: var(--text);
+    border: none;
+    width: 600px;
+}
+
+#search-bar:focus {
+    outline-width: 0px;
+    color: var(--text);
+}
