@@ -29,7 +29,7 @@
             <!-- Leave these empty for now, they will be filled dynamically -->
         </ul>
     </nav>
-    <div class="nav-bar">
+    <nav class="nav-bar">
         <div class="language-dropdown">
             <div id="language-dropdown-button" onclick="languageDropdown()">
                 <i class="fa-solid fa-caret-down"></i>
@@ -40,10 +40,13 @@
                 <div onclick="changeLanguage('pl')">Polish</div>
             </div>
         </div>
-        <div class="search-bar-container">
-            <div id="search-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <input type="text" id="search-bar" placeholder="">
+        <div class="search-and-theme">
+            <div class="theme-switcher" onclick="switchTheme()"><i class="fa-solid fa-moon"></i></div>
+            <div class="search-bar-container">
+                <div id="search-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" id="search-bar" placeholder="">
+            </div>
         </div>
-    </div>
+    </nav>
 </body>
 </html>
