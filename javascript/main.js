@@ -200,7 +200,10 @@ function switchTheme() {
 
         // Disable transitions for all elements
         allElements.forEach(element => {
-            element.style.transition = 'none';
+            const computedTransition = getComputedStyle(element).getPropertyValue('transition');
+            if (computedTransition.includes('0.25s')) {
+                element.style.transition = '0.001s';
+            }
         });
 
         document.documentElement.style.setProperty("--primary", "#F1E9E1");
@@ -239,8 +242,8 @@ function switchTheme() {
         // Disable transitions for all elements
         allElements.forEach(element => {
             const computedTransition = getComputedStyle(element).getPropertyValue('transition');
-            if (computedTransition !== 'none') {
-                element.style.transition = 'none';
+            if (computedTransition.includes('0.25s')) {
+                element.style.transition = '0.001s';
             }
         });
 
@@ -279,7 +282,10 @@ function switchTheme() {
     // Enable transitions after theme change
     setTimeout(() => {
         allElements.forEach(element => {
-            element.style.transition = '0.25s'; // Set it back to the default
+            const computedTransition = getComputedStyle(element).getPropertyValue('transition');
+            if (computedTransition.includes('0.001s')) {
+                element.style.transition = '0.25s';
+            }
         });
-    }, 0);
+    }, 0);2
 }

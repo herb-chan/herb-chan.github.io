@@ -54,11 +54,10 @@ body {
     width: 200px;
     padding: 20px;
     border-radius: 16px;
-    transition: 0.5s;
     text-align: left;
     background-color: var(--secondary);
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.25s;
     align-items: center;
     margin-top: 40px;
 }
@@ -114,7 +113,6 @@ body {
     width: 200px;
     padding: 20px;
     border-radius: 16px;
-    transition: 0.5s;
     text-align: left;
     color: var(--tertiary);
     font-size: 20px;
@@ -177,11 +175,10 @@ body {
     width: 200px;
     padding: 20px;
     border-radius: 16px;
-    transition: 0.5s;
     text-align: left;
     color: var(--tertiary);
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.25s;
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -219,11 +216,10 @@ body {
     width: 120px;
     padding: 20px;
     border-radius: 16px;
-    transition: 0.5s;
     text-align: left;
     color: var(--tertiary);
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.25s;
     cursor: pointer;
     margin-inline: 30px;
     background-color: var(--secondary);
@@ -261,7 +257,7 @@ body {
     text-decoration: none;
     display: block;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.25s;
     cursor: pointer;
 }
   
