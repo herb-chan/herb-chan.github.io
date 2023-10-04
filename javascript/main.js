@@ -71,13 +71,6 @@ function pageSelect(pageId) {
     disableThree.style.color = tertiary;
     disableFour.style.color = tertiary;
     disableFive.style.color = tertiary;
-
-    switchColours.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.1)";
-    disableOne.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.0)";
-    disableTwo.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.0)";
-    disableThree.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.0)";
-    disableFour.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.0)";
-    disableFive.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.0)";
 }
 
 let currentLanguage = "en"; // Default language

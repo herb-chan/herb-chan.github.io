@@ -29,24 +29,42 @@
             <!-- Leave these empty for now, they will be filled dynamically -->
         </ul>
     </nav>
-    <nav class="nav-bar">
-        <div class="language-dropdown">
-            <div id="language-dropdown-button" onclick="languageDropdown()">
-                <i class="fa-solid fa-caret-down"></i>
-                <span id="current-language"></span>
+    <section class="website-content">
+        <nav class="nav-bar">
+            <div class="language-dropdown">
+                <div id="language-dropdown-button" onclick="languageDropdown()">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span id="current-language"></span>
+                </div>
+                <div class="language-dropdown-content">
+                    <div onclick="changeLanguage('en')" id="first-language-switch">English</div>
+                    <div onclick="changeLanguage('pl')">Polish</div>
+                </div>
             </div>
-            <div class="language-dropdown-content">
-                <div onclick="changeLanguage('en')" id="first-language-switch">English</div>
-                <div onclick="changeLanguage('pl')">Polish</div>
+            <div class="search-and-theme">
+                <div class="theme-switcher" onclick="switchTheme()"><i class="fa-solid fa-moon"></i></div>
+                <div class="search-bar-container">
+                    <div id="search-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" id="search-bar" placeholder="">
+                </div>
             </div>
-        </div>
-        <div class="search-and-theme">
-            <div class="theme-switcher" onclick="switchTheme()"><i class="fa-solid fa-moon"></i></div>
-            <div class="search-bar-container">
-                <div id="search-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="text" id="search-bar" placeholder="">
-            </div>
-        </div>
-    </nav>
+        </nav>
+        <section class="home-page-section">
+            <section class="propositions-container">
+                <div id="propositions-text-container">
+                    <p id="propositions-text">Home</p>
+                    <p id="show-all-propositions">Show all</p>
+                </div>
+                <div id="propositions">
+                    <div id="latest-proposition">
+                        <p>Check out<br>my latest blog post</p>
+                    </div>
+                    <div id="latest-proposition">
+                        <p>Check out<br>my latest project</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
 </body>
 </html>
